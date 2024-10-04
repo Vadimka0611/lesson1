@@ -1,20 +1,17 @@
-number = 3852 # Задать числу переменную
-n1 = number // 1000
-n2 = number % 1000 // 100
-n3 = number % 100 // 10
-n4 = number % 10
-# По очереди создал функции для каждой отдельной цыфры
-print(n1, n2, n3, n4, sep="\n") # Задал действие для перменных, возведение в столбик
+num1 = int(input("Enter your first number: "))
 
+while True:
+    num2 = int(input("Enter your second number: "))
+    if num2 == 0:
+        print("You can't divide by 0! Try again.")
+    else: break
 
-number = int(input("Enter your number: ")) # 13469
-n1 = 1
-n2 = 3
-n3 = 4
-n4 = 6
-n5 = 9
-# Создать переменную к каждому числу
-result = n5 * 10000 + n4 * 1000 + n3 * 100 + n2 * 10 + n1 * 1
-# С помощью математических действий, сделать 5ти значное число наоборот
-print(result)
-# Вывести результат
+result1 = num1 + num2
+result2 = num1 - num2
+result3 = num1 * num2
+result4 = num1 / num2
+
+print(f"{num1} + {num2} = {result1}")
+print(f"{num1} - {num2} = {result2}")
+print(f"{num1} * {num2} = {result3}")
+print(f"{num1} / {num2} = {result4}")
